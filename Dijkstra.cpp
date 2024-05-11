@@ -41,10 +41,6 @@ bool isValid(Mat img,int x,int y) {
 	return true;
 }
 
-double h(Point curr, Point goal)
-{
-    return sqrt(pow(curr.x - goal.x,2) + pow(curr.y - goal.y,2));
-}
 
 
 void Plan(Mat img,Point source, Point goal)
@@ -87,15 +83,10 @@ void Plan(Mat img,Point source, Point goal)
                 {
                     if(visited[current.p.x + s][current.p.y + u] == 0)
                     {
-                        if(s==1 & u ==1)
-                        {
-                            wt = 1.4;
-                        }
-                        else{
-                            wt = 1;
-                        }
-                        h_Node_ = h(Point(current.p.x,current.p.y),goal);
-                        f_Node_ = h_Node_ + wt +g[current.p.x][current.p.y];
+                        wt = 1;
+                        if((fabs(s) + fabs(u)) != 1) wt = 1.414;
+                        
+                        f_Node_ =  wt +g[current.p.x][current.p.y];
 
                         if(f_Node_ < f[current.p.x+s][current.p.y+u]){ 
                             final_image.at<uchar>(current.p.y,current.p.x) = 255;
@@ -133,11 +124,11 @@ void Plan(Mat img,Point source, Point goal)
 		y_curr = curr_next.p.y;
     }
     cout << "COST : " << g[goal.x][goal.y] << endl;
-	//namedWindow("DJI",WINDOW_AUTOSIZE);
-	//imshow("DJI",img);
-	//imshow("EXPANDED",show_expanding);
-	// waitKey(0);
-	// imwrite("Output.png",img);
+	namedWindow("DJI",WINDOW_AUTOSIZE);
+	imshow("DJI",img);
+	// imshow("EXPANDED",show_expanding);
+	waitKey(0);
+	imwrite("Output.png",img);
 
 }
 

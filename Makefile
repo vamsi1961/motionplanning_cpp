@@ -130,65 +130,65 @@ a_star/fast:
 .PHONY : a_star/fast
 
 #=============================================================================
-# Target rules for targets named DisplayImage
+# Target rules for targets named Dijkstra
 
 # Build rule for target.
-DisplayImage: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DisplayImage
-.PHONY : DisplayImage
+Dijkstra: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Dijkstra
+.PHONY : Dijkstra
 
 # fast build rule for target.
-DisplayImage/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/build
-.PHONY : DisplayImage/fast
+Dijkstra/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dijkstra.dir/build.make CMakeFiles/Dijkstra.dir/build
+.PHONY : Dijkstra/fast
 
-A_star/a_star.o: A_star/a_star.cpp.o
-.PHONY : A_star/a_star.o
-
-# target to build an object file
-A_star/a_star.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_star.dir/build.make CMakeFiles/a_star.dir/A_star/a_star.cpp.o
-.PHONY : A_star/a_star.cpp.o
-
-A_star/a_star.i: A_star/a_star.cpp.i
-.PHONY : A_star/a_star.i
-
-# target to preprocess a source file
-A_star/a_star.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_star.dir/build.make CMakeFiles/a_star.dir/A_star/a_star.cpp.i
-.PHONY : A_star/a_star.cpp.i
-
-A_star/a_star.s: A_star/a_star.cpp.s
-.PHONY : A_star/a_star.s
-
-# target to generate assembly for a file
-A_star/a_star.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_star.dir/build.make CMakeFiles/a_star.dir/A_star/a_star.cpp.s
-.PHONY : A_star/a_star.cpp.s
-
-DisplayImage.o: DisplayImage.cpp.o
-.PHONY : DisplayImage.o
+Dijkstra.o: Dijkstra.cpp.o
+.PHONY : Dijkstra.o
 
 # target to build an object file
-DisplayImage.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o
-.PHONY : DisplayImage.cpp.o
+Dijkstra.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dijkstra.dir/build.make CMakeFiles/Dijkstra.dir/Dijkstra.cpp.o
+.PHONY : Dijkstra.cpp.o
 
-DisplayImage.i: DisplayImage.cpp.i
-.PHONY : DisplayImage.i
+Dijkstra.i: Dijkstra.cpp.i
+.PHONY : Dijkstra.i
 
 # target to preprocess a source file
-DisplayImage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.i
-.PHONY : DisplayImage.cpp.i
+Dijkstra.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dijkstra.dir/build.make CMakeFiles/Dijkstra.dir/Dijkstra.cpp.i
+.PHONY : Dijkstra.cpp.i
 
-DisplayImage.s: DisplayImage.cpp.s
-.PHONY : DisplayImage.s
+Dijkstra.s: Dijkstra.cpp.s
+.PHONY : Dijkstra.s
 
 # target to generate assembly for a file
-DisplayImage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.s
-.PHONY : DisplayImage.cpp.s
+Dijkstra.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dijkstra.dir/build.make CMakeFiles/Dijkstra.dir/Dijkstra.cpp.s
+.PHONY : Dijkstra.cpp.s
+
+a_star.o: a_star.cpp.o
+.PHONY : a_star.o
+
+# target to build an object file
+a_star.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_star.dir/build.make CMakeFiles/a_star.dir/a_star.cpp.o
+.PHONY : a_star.cpp.o
+
+a_star.i: a_star.cpp.i
+.PHONY : a_star.i
+
+# target to preprocess a source file
+a_star.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_star.dir/build.make CMakeFiles/a_star.dir/a_star.cpp.i
+.PHONY : a_star.cpp.i
+
+a_star.s: a_star.cpp.s
+.PHONY : a_star.s
+
+# target to generate assembly for a file
+a_star.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a_star.dir/build.make CMakeFiles/a_star.dir/a_star.cpp.s
+.PHONY : a_star.cpp.s
 
 # Help Target
 help:
@@ -198,14 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... DisplayImage"
+	@echo "... Dijkstra"
 	@echo "... a_star"
-	@echo "... A_star/a_star.o"
-	@echo "... A_star/a_star.i"
-	@echo "... A_star/a_star.s"
-	@echo "... DisplayImage.o"
-	@echo "... DisplayImage.i"
-	@echo "... DisplayImage.s"
+	@echo "... Dijkstra.o"
+	@echo "... Dijkstra.i"
+	@echo "... Dijkstra.s"
+	@echo "... a_star.o"
+	@echo "... a_star.i"
+	@echo "... a_star.s"
 .PHONY : help
 
 

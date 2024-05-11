@@ -69,28 +69,28 @@ include CMakeFiles/a_star.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/a_star.dir/flags.make
 
-CMakeFiles/a_star.dir/A_star/a_star.cpp.o: CMakeFiles/a_star.dir/flags.make
-CMakeFiles/a_star.dir/A_star/a_star.cpp.o: A_star/a_star.cpp
-CMakeFiles/a_star.dir/A_star/a_star.cpp.o: CMakeFiles/a_star.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kishore/motionplanning_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/a_star.dir/A_star/a_star.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a_star.dir/A_star/a_star.cpp.o -MF CMakeFiles/a_star.dir/A_star/a_star.cpp.o.d -o CMakeFiles/a_star.dir/A_star/a_star.cpp.o -c /home/kishore/motionplanning_cpp/A_star/a_star.cpp
+CMakeFiles/a_star.dir/a_star.cpp.o: CMakeFiles/a_star.dir/flags.make
+CMakeFiles/a_star.dir/a_star.cpp.o: a_star.cpp
+CMakeFiles/a_star.dir/a_star.cpp.o: CMakeFiles/a_star.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kishore/motionplanning_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/a_star.dir/a_star.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a_star.dir/a_star.cpp.o -MF CMakeFiles/a_star.dir/a_star.cpp.o.d -o CMakeFiles/a_star.dir/a_star.cpp.o -c /home/kishore/motionplanning_cpp/a_star.cpp
 
-CMakeFiles/a_star.dir/A_star/a_star.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a_star.dir/A_star/a_star.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kishore/motionplanning_cpp/A_star/a_star.cpp > CMakeFiles/a_star.dir/A_star/a_star.cpp.i
+CMakeFiles/a_star.dir/a_star.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a_star.dir/a_star.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kishore/motionplanning_cpp/a_star.cpp > CMakeFiles/a_star.dir/a_star.cpp.i
 
-CMakeFiles/a_star.dir/A_star/a_star.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a_star.dir/A_star/a_star.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kishore/motionplanning_cpp/A_star/a_star.cpp -o CMakeFiles/a_star.dir/A_star/a_star.cpp.s
+CMakeFiles/a_star.dir/a_star.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a_star.dir/a_star.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kishore/motionplanning_cpp/a_star.cpp -o CMakeFiles/a_star.dir/a_star.cpp.s
 
 # Object files for target a_star
 a_star_OBJECTS = \
-"CMakeFiles/a_star.dir/A_star/a_star.cpp.o"
+"CMakeFiles/a_star.dir/a_star.cpp.o"
 
 # External object files for target a_star
 a_star_EXTERNAL_OBJECTS =
 
-a_star: CMakeFiles/a_star.dir/A_star/a_star.cpp.o
+a_star: CMakeFiles/a_star.dir/a_star.cpp.o
 a_star: CMakeFiles/a_star.dir/build.make
 a_star: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 a_star: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
