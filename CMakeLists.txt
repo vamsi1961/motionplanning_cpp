@@ -9,3 +9,6 @@ target_link_libraries( a_star ${OpenCV_LIBS} )
 add_executable( Dijkstra Dijkstra.cpp )
 target_link_libraries( Dijkstra ${OpenCV_LIBS} )
 
+add_executable( RRT RRT.cpp )
+target_link_libraries( RRT ${OpenCV_LIBS} )
+

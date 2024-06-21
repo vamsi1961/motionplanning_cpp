@@ -1,0 +1,2 @@
+/usr/bin/ar qc libutillib.a CMakeFiles/utillib.dir/utils/img_io.cpp.o
+/usr/bin/ranlib libutillib.a
