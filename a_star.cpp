@@ -162,3 +162,8 @@ int main(int argc, char *argv[]) {
 	t = clock() - t;
 	cout << "Time : " << t << endl;
 }
+
+
+// g++ -o a_star a_star.cpp `pkg-config --cflags --libs opencv4`
+// code to run
+
